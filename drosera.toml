@@ -1,0 +1,17 @@
+ethereum_rpc = "https://ethereum-hoodi-rpc.publicnode.com"
+drosera_rpc = "https://relay.hoodi.drosera.io"
+eth_chain_id = 560048
+drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
+
+[traps]
+
+[traps.supplyanomaly]
+path = "out/UniversalSupplyAnomalyTrap.sol/UniversalSupplyAnomalyTrap.json"
+response_contract = "0x4f1055bd024e33bb97703064742636ab7e4b2fe6"
+response_function = "respond(string,bytes)"
+cooldown_period_blocks = 30
+min_number_of_operators = 1
+max_number_of_operators = 2
+block_sample_size = 10
+private_trap = true
+whitelist = ["0x1a5D9bCC1A67974d0981d715276982C98dCDE931"]
